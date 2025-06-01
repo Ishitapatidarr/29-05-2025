@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hoverable Sidebar Buttons</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Sidebar container */
+      .sidebar {
+        height: 100vh;
+        width: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        border-right: 1px solid #ccc;
+      }
+
+      /* Each button block */
+      .sidebar a {
+        display: block;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        transition: 0.3s;
+        color: white;
+        font-size: 0;
+      }
+
+      .sidebar a:hover {
+        width: 200px;
+        font-size: 16px;
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      /* Colors for each button */
+      .green {
+        background-color: #4caf50;
+      }
+      .blue {
+        background-color: #2196f3;
+      }
+      .red {
+        background-color: #f44336;
+      }
+      .black {
+        background-color: #555;
+      }
+
+      /* Content area */
+      .main {
+        margin-left: 70px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" class="green">Home</a>
+      <a href="#" class="blue">About</a>
+      <a href="#" class="red">Services</a>
+      <a href="#" class="black">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Hoverable Sidebar Buttons</h2>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+  </body>
+</html>
